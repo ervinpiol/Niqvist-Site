@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h2-style {
+  @apply text-[40px] lg:text-[90px] font-bold;
+}
+
+.h3-style {
+  @apply text-[32px] lg:text-[64px] font-black;
+}
+
+.h6-style {
+  @apply text-xl font-bold;
+}
+
+@media (min-width: 1024px) {
+  .custom-grid-start {
+    grid-template-columns: 37% 30% 30%;
+  }
+
+  .custom-grid-end {
+    grid-template-columns: 30% 30% 37%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .custom-grid-start {
+    grid-template-columns: 39.5% 29% 29%;
+  }
+
+  .custom-grid-end {
+    grid-template-columns: 29% 29% 39.5%;
+  }
+}
